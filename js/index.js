@@ -27,3 +27,18 @@ function initMap() {
         });
     }
 }
+
+//! модальное окно
+let modal = document.getElementById("myModal");
+let burgerIcon = document.querySelector(".burgerMenu");
+
+burgerIcon.onclick = function() {
+    modal.style.display = "block";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
